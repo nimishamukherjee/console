@@ -43,6 +43,7 @@ const TopologyPageToolbar: React.FC<TopologyPageToolbarProps> = observer(
         ) : null}
         <Tooltip position="left" content={showGraphView ? 'List View' : 'Topology View'}>
           <Button
+            aria-label={showGraphView ? 'List View' : 'Topology View'}
             variant="link"
             className="pf-m-plain odc-topology__view-switcher"
             onClick={() =>
