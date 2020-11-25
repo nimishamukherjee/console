@@ -28,7 +28,12 @@ const QuickSearchButton: React.FC = () => {
 
   return (
     <Tooltip position="right" content="Add to project">
-      <Button className="odc-quick-search-button" variant="plain" isActive={isQuickSearchActive}>
+      <Button
+        aria-label="Add to project"
+        className="odc-quick-search-button"
+        variant="plain"
+        isActive={isQuickSearchActive}
+      >
         <QuickSearchIcon />
       </Button>
     </Tooltip>
