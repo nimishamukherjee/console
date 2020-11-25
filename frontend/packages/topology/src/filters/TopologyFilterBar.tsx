@@ -132,7 +132,11 @@ const TopologyFilterBar: React.FC<TopologyFilterBarProps> = ({
                   </>
                 }
               >
-                <Button variant="link" className="odc-topology-filter-bar__info-icon">
+                <Button
+                  aria-label="Information"
+                  variant="link"
+                  className="odc-topology-filter-bar__info-icon"
+                >
                   <InfoCircleIcon />
                 </Button>
               </Popover>
